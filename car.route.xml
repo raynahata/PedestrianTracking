@@ -1,0 +1,40 @@
+<routes>
+    <vType id="Car" accel="0.8" decel="4.5" sigma="0.5" length="5" maxSpeed="70"/>
+    
+  
+   
+    <vehicle id="0" type="Car" depart="0" color="1,0,0">
+      <route edges="322361922#0 322361922#1"/>
+    </vehicle>
+
+    <vehicle id="1" type="Car" depart="0" color="1,0,0">
+      <route edges="322361922#0 320948884#0 "/>
+    </vehicle>
+
+    <vehicle id="2" type="Car" depart="0" color="1,0,0">
+      <route edges="-322361922#1 320948884#0"/>
+    </vehicle>
+
+    <vehicle id="3" type="Car" depart="0" color="1,0,0">
+      <route edges="-322361922#1 -322361922#0"/>
+    </vehicle>
+
+    <vehicle id="4" type="Car" depart="0" color="1,0,0">
+      <route edges="-322361922#1 -299800403"/>
+    </vehicle>
+
+    <vehicle id="5" type="Car" depart="0" color="1,0,0">
+      <route edges="299800403 320948884#0"/>
+    </vehicle>
+
+    <vehicle id="6" type="Car" depart="0" color="1,0,0">
+      <route edges="-320948884#0 322361922#1"/>
+    </vehicle>
+
+    <vehicle id="7" type="Car" depart="0" color="1,0,0">
+      <route edges="299800403 -322361922#0"/>
+    </vehicle>
+
+
+
+</routes>
