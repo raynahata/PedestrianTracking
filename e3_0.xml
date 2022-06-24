@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2022-06-17 14:50:22 by Eclipse SUMO GUI Version 1.13.0
+<!-- generated on 2022-06-24 15:01:38 by Eclipse SUMO GUI Version 1.13.0
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
@@ -31,5 +31,5 @@
 -->
 
 <e3Detector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/det_e3_file.xsd">
-   <interval begin="0.00" end="193.00" id="e3_0" meanTravelTime="-1.00" meanOverlapTravelTime="-1.00" meanSpeed="-1.00" meanHaltsPerVehicle="-1.00" meanTimeLoss="-1.00" vehicleSum="0" meanSpeedWithin="1.24" meanHaltsPerVehicleWithin="1.00" meanDurationWithin="14.00" vehicleSumWithin="1" meanIntervalSpeedWithin="1.24" meanIntervalHaltsPerVehicleWithin="1.00" meanIntervalDurationWithin="14.00" meanTimeLossWithin="0.00"/>
+   <interval begin="0.00" end="143.00" id="e3_0" meanTravelTime="-1.00" meanOverlapTravelTime="-1.00" meanSpeed="-1.00" meanHaltsPerVehicle="-1.00" meanTimeLoss="-1.00" vehicleSum="0" meanSpeedWithin="0.58" meanHaltsPerVehicleWithin="3.00" meanDurationWithin="30.03" vehicleSumWithin="1" meanIntervalSpeedWithin="0.58" meanIntervalHaltsPerVehicleWithin="3.00" meanIntervalDurationWithin="30.03" meanTimeLossWithin="0.00"/>
 </e3Detector>

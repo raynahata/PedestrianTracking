@@ -4,6 +4,8 @@ from pprint import PrettyPrinter
 import sys
 import optparse
 import csv 
+import random
+import math
 
 
 #importing some python modules from the SUMO HOME tools directory 
@@ -53,20 +55,33 @@ def run():
             pedLaneID.append(laneID)
             posLaneList.append(posLane)
             
-
-
             with open('pedestrianInfo.csv', 'w', encoding='UTF8') as f:
                 writer = csv.writer(f)
-                writer.writerow(["Position","Angle","Speed","Current Lane"])
+                writer.writerow(["PositionX","PositionY","Angle","Speed","Current Lane"])
                 for x in range (len(pedPos)):
-                    writer.writerow([pedPos[x],pedAngle[x],pedSpeed[x],pedLaneID[x],posLaneList[x]])
+                    writer.writerow([pedPos[x][0],pedPos[x][1],pedAngle[x],pedSpeed[x],pedLaneID[x],posLaneList[x]])
 
             #person control function  
             detectedPerson=traci.multientryexit.getLastStepVehicleIDs('e3_0')
             #print(len(detectedPerson))
             #move the person once they reach the entry detector
             if(len(detectedPerson)==1):
-                traci.person.moveToXY('p_0', "104530304_w3_0", pos[0]+1, pos[1]+1, angle=-40, keepRoute=2, matchThreshold=100)
+                cur_pos=traci.person.getPosition('p_0')
+                #cur_speed=traci.person.getSpeed('p_0')
+                cur_angle=traci.person.getAngle('p_0')
+                new_speed = random.uniform(0,1.3)
+                new_angle = cur_angle + random.uniform(-5,5)
+                print("new angle:", new_angle)
+                print("new speed", new_speed)
+                
+                new_posX= cur_pos[0]+abs((math.cos(new_angle)*new_speed))
+                print(math.cos(new_angle)*new_speed)
+                new_posY= cur_pos[1]+ abs((math.sin(new_angle)*new_speed))
+
+
+                traci.person.setSpeed('p_0',new_speed)
+                #traci.person.setAngle('p_0',new_angle)
+                traci.person.moveToXY('p_0', ":104530304_c1_0", new_posX, new_posY, angle=new_angle, keepRoute=0, matchThreshold=100)
         step+=1 #increment the step
 
     traci.close()

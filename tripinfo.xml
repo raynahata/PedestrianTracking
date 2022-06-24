@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2022-06-17 14:50:22 by Eclipse SUMO GUI Version 1.13.0
+<!-- generated on 2022-06-24 15:01:38 by Eclipse SUMO GUI Version 1.13.0
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
@@ -44,5 +44,4 @@
     <tripinfo id="6" depart="0.00" departLane="-320948884#0_1" departPos="5.10" departSpeed="0.00" departDelay="0.00" arrival="59.00" arrivalLane="322361922#1_1" arrivalPos="53.72" arrivalSpeed="9.19" duration="59.00" routeLength="97.17" waitingTime="33.00" waitingCount="1" stopTime="0.00" timeLoss="51.57" rerouteNo="0" devices="tripinfo_6" vType="Car" speedFactor="1.05" vaporized=""/>
     <tripinfo id="t_5" depart="9.00" departLane="-320948884#0_1" departPos="5.10" departSpeed="0.00" departDelay="9.00" arrival="63.00" arrivalLane="-322361922#0_1" arrivalPos="58.58" arrivalSpeed="10.10" duration="54.00" routeLength="104.65" waitingTime="31.00" waitingCount="1" stopTime="0.00" timeLoss="44.97" rerouteNo="0" devices="tripinfo_t_5 routing_t_5" vType="DEFAULT_VEHTYPE" speedFactor="0.99" vaporized=""/>
     <tripinfo id="7" depart="5.00" departLane="299800403_1" departPos="5.10" departSpeed="0.00" departDelay="5.00" arrival="93.00" arrivalLane="-322361922#0_1" arrivalPos="58.58" arrivalSpeed="9.61" duration="88.00" routeLength="107.01" waitingTime="58.00" waitingCount="2" stopTime="0.00" timeLoss="78.87" rerouteNo="0" devices="tripinfo_7" vType="Car" speedFactor="0.89" vaporized=""/>
-    <tripinfo id="t_1" depart="10.00" departLane="299800403_1" departPos="5.10" departSpeed="0.00" departDelay="10.00" arrival="178.00" arrivalLane="-322361922#0_1" arrivalPos="58.58" arrivalSpeed="11.14" duration="168.00" routeLength="107.01" waitingTime="140.00" waitingCount="3" stopTime="0.00" timeLoss="160.63" rerouteNo="0" devices="tripinfo_t_1 routing_t_1" vType="DEFAULT_VEHTYPE" speedFactor="1.09" vaporized=""/>
 </tripinfos>
