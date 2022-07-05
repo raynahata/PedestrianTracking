@@ -9,4 +9,10 @@
         <detEntry lane=":104530304_c2_0" pos="0.0"/>
         <detExit lane=":104530304_c2_0" pos="6.4"/>
     </e3Detector>
+   
+    <e3Detector id="e3_1" pos="2286.0388750093052, 970.8" freq="300.00" file="e3_0.xml" detectPersons="walk">
+        <detEntry lane=":104530304_w3_0" pos="-1.25"/>
+        <detExit lane=":104530304_w2_0" pos="6.5"/>
+    </e3Detector>
+
 </additional>

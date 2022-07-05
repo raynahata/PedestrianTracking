@@ -1,5 +1,5 @@
 <routes>
-    <vType id="Car" accel="0.8" decel="4.5" sigma="0.5" length="5" maxSpeed="70"/>
+    <vType id="Car" accel="0.8" decel="4.5" sigma="0.5" length="5" maxSpeed="4"/>
     
   
    
