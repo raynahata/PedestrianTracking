@@ -19,7 +19,7 @@ from sumolib import checkBinary
 import traci 
 
 class Person:
-    def __init__(self, default_speed = 0.3, angle_bounds = [-1,0]):
+    def __init__(self, scenario,default_speed = 0.3, angle_bounds = [-1,0]):
         self.ID='p_0'
         self.default_speed = default_speed
         self.angle_bounds = angle_bounds
@@ -29,11 +29,14 @@ class Person:
         self.angle=traci.person.getAngle(self.ID)
         self.speed=traci.person.getSpeed(self.ID)
         self.laneID=traci.person.getLaneID(self.ID)
-        self.scenario=0
+        self.scenario=scenario
+
         '''
-        0= person walking straight no off movement 
-        1= person drifts up 
-        2=person drifts down
+        
+        0= person drifts up 
+        1=person drifts down
+        2=person keeps driting an acute angles 
+        
         
         
         '''
@@ -74,6 +77,8 @@ class Person:
             self.yPos+=abs(math.cos(newAngle)*newSpeed)
         elif self.scenario==1:
             self.yPos-=abs(math.cos(newAngle)*newSpeed)
+       
+          
         
             
     
@@ -87,5 +92,27 @@ class Person:
     def getDistance(self,device1):
         dist=distance.euclidean(self.pos,device1)
         return dist
+    
+ 
+    def predictAngle(self,dist1,dist2,dist3):
+        '''
+            dist 1 is the distance between singals (c)
+            dist 2 is the distance between pedestrian and the signal they are leaving from (a)
+            dist 3 is the distance between pedestrian and the signal they are going towards (b)
+        '''
+        dist1sq=dist1**2
+        dist2sq=dist2**2
+        dist3sq=dist3**2
 
+        a=((dist1sq+dist2sq)-dist3sq)/(2*dist1*dist2)
 
+        radians=math.acos(a)
+        angle=math.degrees(radians)
+
+        
+        return angle
+
+    def turnPedAround(self,angle):
+        if(angle>10):
+            print("pedestrain is heading in the wrong angle")
+        

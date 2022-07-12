@@ -20,6 +20,20 @@ if 'SUMO_HOME' in os.environ:
 else:
     sys.exit("please declare environment variable 'SUMO_HOME'")
 
+""" 
+    adding noise to the distance readings
+    if the distnace between the person and the singal is less than half of the length of the 
+    intersection, then delta is random number between 0 and 0.05 and if it is more, then delta is between 0.05 and 1
+"""
+def addNoise(distance,interLength):
+    half=interLength/2
+    if(distance>half):
+        delta=random.uniform(0.05,0.1)
+        newDist=distance+delta
+    else:
+        delta=random.uniform(0,0.05)
+        newDist=distance+delta
+    return newDist
 
 
 def get_options():
@@ -48,8 +62,8 @@ def run():
     while traci.simulation.getMinExpectedNumber()>0: #when we have exahused all of our route files 
         traci.simulationStep() #advance the simulation one timestep 
         ped=traci.person.getIDList()
-        ped1=Person()
-        ped1.scenario=1
+        ped1=Person(0)
+      
         
         ped_x.append(ped1.xPos)
         ped_y.append(ped1.yPos)
@@ -81,14 +95,31 @@ def run():
                 new_X=ped1.getPosX()
                 new_Y=ped1.getPosY()
                 ped1.movePerson(new_X,new_Y,new_angle)
+                
+                # ground truth euclidian distances between the signals and the pedestrian 
+                # method located in pedestrian class 
                 dist1=ped1.getDistance(device_one_coord)
                 dist2=ped1.getDistance(device_two_coord)
+                
+                #hardcoded length of the intersection 
+                length=6.4
+
+                #adding noise to the distance calculations in order to mimic noise 
+                newDist1=addNoise(dist1,length)
+                newDist2=addNoise(dist2,length)
+
+                signalDist=distance.euclidean(device_one_coord,device_two_coord)
+
+                angle=ped1.predictAngle(signalDist,newDist1,newDist2)
+                ped1.turnPedAround(angle)
+                print(angle)
                 
              
         step+=1 #increment the step
 
     traci.close()
     sys.stdout.flush()
+
 
 
 #main loop
