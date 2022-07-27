@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2022-07-12 09:53:27 by Eclipse SUMO GUI Version 1.13.0
+<!-- generated on 2022-07-24 20:33:30 by Eclipse SUMO GUI Version 1.13.0
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
@@ -17,6 +17,7 @@
     <time>
         <begin value="0"/>
         <end value="1000"/>
+        <step-length value="0.1"/>
     </time>
 
     <traci_server>
@@ -25,6 +26,12 @@
 
     <gui_only>
         <gui-settings-file value="view.xml"/>
+        <tracker-interval value="0.1"/>
     </gui_only>
 
 </configuration>
+-->
+
+<e3Detector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/det_e3_file.xsd">
+   <interval begin="0.00" end="275.10" id="e3_0" meanTravelTime="-1.00" meanOverlapTravelTime="-1.00" meanSpeed="-1.00" meanHaltsPerVehicle="-1.00" meanTimeLoss="-1.00" vehicleSum="0" meanSpeedWithin="2.34" meanHaltsPerVehicleWithin="0.00" meanDurationWithin="5.19" vehicleSumWithin="1" meanIntervalSpeedWithin="2.34" meanIntervalHaltsPerVehicleWithin="0.00" meanIntervalDurationWithin="5.19" meanTimeLossWithin="0.00"/>
+</e3Detector>

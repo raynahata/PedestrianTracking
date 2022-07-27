@@ -6,8 +6,10 @@ import sys
 import optparse
 import random
 import math
+from this import s
 from turtle import pos
 from scipy.spatial import distance
+import numpy as np
 
 if 'SUMO_HOME' in os.environ:
     tools = os.path.join(os.environ['SUMO_HOME'], 'tools')
@@ -19,7 +21,7 @@ from sumolib import checkBinary
 import traci 
 
 class Person:
-    def __init__(self, scenario,default_speed = 0.3, angle_bounds = [-1,0]):
+    def __init__(self, scenario,default_speed = 0.3, angle_bounds = [-2,-1]):
         self.ID='p_0'
         self.default_speed = default_speed
         self.angle_bounds = angle_bounds
@@ -49,7 +51,6 @@ class Person:
         return self.speed
     
     def setNewSpeed(self):
-        #self.speed=random.uniform(0,1)
         self.speed = self.default_speed
         traci.person.setSpeed(self.ID,self.speed)
 
@@ -59,6 +60,9 @@ class Person:
     def setNewAngle(self):
         self.angle+=random.uniform(self.angle_bounds[0],self.angle_bounds[1])
     
+    def setCorrectedAngle(self,angle):
+        self.angle=angle
+
     def getPosX(self):
         return self.xPos
     
@@ -74,12 +78,13 @@ class Person:
     def setNewY(self,newAngle,newSpeed):
         
         if self.scenario==0:
-            self.yPos+=abs(math.cos(newAngle)*newSpeed)
+            newRad=math.radians(newAngle)
+            self.yPos+=(math.cos(newRad)*newSpeed) 
         elif self.scenario==1:
-            self.yPos-=abs(math.cos(newAngle)*newSpeed)
+            newRad=math.radians(newAngle)
+            self.yPos-=math.cos(newRad)*newSpeed 
        
-          
-        
+
             
     
     def movePerson(self,x,y,a):
@@ -99,6 +104,9 @@ class Person:
             dist 1 is the distance between singals (c)
             dist 2 is the distance between pedestrian and the signal they are leaving from (a)
             dist 3 is the distance between pedestrian and the signal they are going towards (b)
+
+            maybe wrong??
+       
         '''
         dist1sq=dist1**2
         dist2sq=dist2**2
@@ -112,7 +120,5 @@ class Person:
         
         return angle
 
-    def turnPedAround(self,angle):
-        if(angle>10):
-            print("pedestrain is heading in the wrong angle")
+        
         
