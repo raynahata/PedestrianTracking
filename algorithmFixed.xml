@@ -1,0 +1,284 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Microsoft Office User</Author>
+  <LastAuthor>Microsoft Office User</LastAuthor>
+  <Created>2022-07-30T20:09:27Z</Created>
+  <LastSaved>2022-07-30T20:09:45Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>15100</WindowHeight>
+  <WindowWidth>26840</WindowWidth>
+  <WindowTopX>1580</WindowTopX>
+  <WindowTopY>2000</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Interior ss:Color="#FFFF00" ss:Pattern="Solid"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="2" ss:ExpandedRowCount="51" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="16">
+   <Row>
+    <Cell><Data ss:Type="String">AverageX_Test</Data></Cell>
+    <Cell><Data ss:Type="String">AverageY_Test</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2285.452315</Data></Cell>
+    <Cell><Data ss:Type="Number">968.73762950000003</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2285.6153100000001</Data></Cell>
+    <Cell><Data ss:Type="Number">968.70811079999999</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2285.9025590000001</Data></Cell>
+    <Cell><Data ss:Type="Number">968.8393671</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2286.0340649999998</Data></Cell>
+    <Cell><Data ss:Type="Number">968.93503090000002</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2286.341766</Data></Cell>
+    <Cell><Data ss:Type="Number">968.96431870000004</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2286.4244880000001</Data></Cell>
+    <Cell><Data ss:Type="Number">969.12633740000001</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2286.6920789999999</Data></Cell>
+    <Cell><Data ss:Type="Number">968.95176230000004</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2286.755897</Data></Cell>
+    <Cell><Data ss:Type="Number">969.17088920000003</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2287.0854100000001</Data></Cell>
+    <Cell><Data ss:Type="Number">969.08392130000004</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2287.2322429999999</Data></Cell>
+    <Cell><Data ss:Type="Number">969.03194559999997</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2287.4551240000001</Data></Cell>
+    <Cell><Data ss:Type="Number">969.19426150000004</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2287.7214370000002</Data></Cell>
+    <Cell><Data ss:Type="Number">969.09804599999995</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2287.8596389999998</Data></Cell>
+    <Cell><Data ss:Type="Number">969.39893229999996</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2288.1790129999999</Data></Cell>
+    <Cell><Data ss:Type="Number">969.35905460000004</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2288.1898590000001</Data></Cell>
+    <Cell><Data ss:Type="Number">969.37774730000001</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2288.4418030000002</Data></Cell>
+    <Cell><Data ss:Type="Number">969.53854309999997</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2288.5316680000001</Data></Cell>
+    <Cell><Data ss:Type="Number">969.61187719999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2288.8908459999998</Data></Cell>
+    <Cell><Data ss:Type="Number">969.84274040000003</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2289.061162</Data></Cell>
+    <Cell><Data ss:Type="Number">969.81917520000002</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2289.2803650000001</Data></Cell>
+    <Cell><Data ss:Type="Number">969.89651509999999</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2289.4334600000002</Data></Cell>
+    <Cell><Data ss:Type="Number">969.91789689999996</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2289.6660750000001</Data></Cell>
+    <Cell><Data ss:Type="Number">970.12333079999996</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2289.864842</Data></Cell>
+    <Cell><Data ss:Type="Number">970.23951350000004</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2289.9815170000002</Data></Cell>
+    <Cell><Data ss:Type="Number">970.28399979999995</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2290.2341630000001</Data></Cell>
+    <Cell><Data ss:Type="Number">970.46412610000004</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2290.3315210000001</Data></Cell>
+    <Cell><Data ss:Type="Number">970.69033420000005</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2290.595566</Data></Cell>
+    <Cell><Data ss:Type="Number">970.88127139999995</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2290.6604149999998</Data></Cell>
+    <Cell><Data ss:Type="Number">971.00845409999999</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2290.8982860000001</Data></Cell>
+    <Cell><Data ss:Type="Number">971.22679500000004</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2290.9027409999999</Data></Cell>
+    <Cell><Data ss:Type="Number">971.41734910000002</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">2291.1734259999998</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">971.6094382</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Formula="=R[-1]C+0.3"><Data ss:Type="Number">2291.473426</Data></Cell>
+    <Cell ss:Formula="=((R[-1]C[8]-0.05)*(R[-1]C[-1]+0.3-R2C[-1]))+R2C"><Data
+      ss:Type="Number">968.43657395000002</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Formula="=R[-1]C+0.3"><Data ss:Type="Number">2291.7734260000002</Data></Cell>
+    <Cell ss:Formula="=((R[-1]C[8]-0.05)*(R[-1]C[-1]+0.3-R2C[-1]))+R2C"><Data
+      ss:Type="Number">968.42157395000004</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Formula="=R[-1]C+0.3"><Data ss:Type="Number">2292.0734260000004</Data></Cell>
+    <Cell ss:Formula="=((R[-1]C[8]-0.05)*(R[-1]C[-1]+0.3-R2C[-1]))+R2C"><Data
+      ss:Type="Number">968.40657395000005</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Formula="=R[-1]C+0.3"><Data ss:Type="Number">2292.3734260000006</Data></Cell>
+    <Cell ss:Formula="=((R[-1]C[8]-0.05)*(R[-1]C[-1]+0.3-R2C[-1]))+R2C"><Data
+      ss:Type="Number">968.39157394999995</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Formula="=R[-1]C+0.3"><Data ss:Type="Number">2292.6734260000007</Data></Cell>
+    <Cell ss:Formula="=((R[-1]C[8]-0.05)*(R[-1]C[-1]+0.3-R2C[-1]))+R2C"><Data
+      ss:Type="Number">968.37657394999997</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Formula="=R[-1]C+0.3"><Data ss:Type="Number">2292.9734260000009</Data></Cell>
+    <Cell ss:Formula="=((R[-1]C[8])*(R[-1]C[-1]+0.3-R2C[-1]))+R2C"><Data
+      ss:Type="Number">968.73762950000003</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Formula="=R[-1]C+0.3"><Data ss:Type="Number">2293.2734260000011</Data></Cell>
+    <Cell ss:Formula="=((R[-1]C[8])*(R[-1]C[-1]+0.3-R2C[-1]))+R2C"><Data
+      ss:Type="Number">968.73762950000003</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Formula="=R[-1]C+0.3"><Data ss:Type="Number">2293.5734260000013</Data></Cell>
+    <Cell ss:Formula="=((R[-1]C[8])*(R[-1]C[-1]+0.3-R2C[-1]))+R2C"><Data
+      ss:Type="Number">968.73762950000003</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Formula="=R[-1]C+0.3"><Data ss:Type="Number">2293.8734260000015</Data></Cell>
+    <Cell ss:Formula="=((R[-1]C[8])*(R[-1]C[-1]+0.3-R2C[-1]))+R2C"><Data
+      ss:Type="Number">968.73762950000003</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Formula="=R[-1]C+0.3"><Data ss:Type="Number">2294.1734260000017</Data></Cell>
+    <Cell ss:Formula="=((R[-1]C[8])*(R[-1]C[-1]+0.3-R2C[-1]))+R2C"><Data
+      ss:Type="Number">968.73762950000003</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Formula="=R[-1]C+0.3"><Data ss:Type="Number">2294.4734260000018</Data></Cell>
+    <Cell ss:Formula="=((R[-1]C[8])*(R[-1]C[-1]+0.3-R2C[-1]))+R2C"><Data
+      ss:Type="Number">968.73762950000003</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Formula="=R[-1]C+0.3"><Data ss:Type="Number">2294.773426000002</Data></Cell>
+    <Cell ss:Formula="=((R[-1]C[8])*(R[-1]C[-1]+0.3-R2C[-1]))+R2C"><Data
+      ss:Type="Number">968.73762950000003</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Formula="=R[-1]C+0.3"><Data ss:Type="Number">2295.0734260000022</Data></Cell>
+    <Cell ss:Formula="=((R[-1]C[8])*(R[-1]C[-1]+0.3-R2C[-1]))+R2C"><Data
+      ss:Type="Number">968.73762950000003</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Formula="=R[-1]C+0.3"><Data ss:Type="Number">2295.3734260000024</Data></Cell>
+    <Cell ss:Formula="=((R[-1]C[8])*(R[-1]C[-1]+0.3-R2C[-1]))+R2C"><Data
+      ss:Type="Number">968.73762950000003</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Formula="=R[-1]C+0.3"><Data ss:Type="Number">2295.6734260000026</Data></Cell>
+    <Cell ss:Formula="=((R[-1]C[8])*(R[-1]C[-1]+0.3-R2C[-1]))+R2C"><Data
+      ss:Type="Number">968.73762950000003</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Formula="=R[-1]C+0.3"><Data ss:Type="Number">2295.9734260000027</Data></Cell>
+    <Cell ss:Formula="=((R[-1]C[8])*(R[-1]C[-1]+0.3-R2C[-1]))+R2C"><Data
+      ss:Type="Number">968.73762950000003</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Formula="=R[-1]C+0.3"><Data ss:Type="Number">2296.2734260000029</Data></Cell>
+    <Cell ss:Formula="=((R[-1]C[8])*(R[-1]C[-1]+0.3-R2C[-1]))+R2C"><Data
+      ss:Type="Number">968.73762950000003</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Formula="=R[-1]C+0.3"><Data ss:Type="Number">2296.5734260000031</Data></Cell>
+    <Cell ss:Formula="=((R[-1]C[8])*(R[-1]C[-1]+0.3-R2C[-1]))+R2C"><Data
+      ss:Type="Number">968.73762950000003</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Formula="=R[-1]C+0.3"><Data ss:Type="Number">2296.8734260000033</Data></Cell>
+    <Cell ss:Formula="=((R[-1]C[8])*(R[-1]C[-1]+0.3-R2C[-1]))+R2C"><Data
+      ss:Type="Number">968.73762950000003</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>7</ActiveRow>
+     <ActiveCol>6</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

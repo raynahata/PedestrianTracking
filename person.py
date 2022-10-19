@@ -1,15 +1,18 @@
-#person file
 from contextlib import nullcontext
 import os
 from pprint import PrettyPrinter
+from re import I
+from ssl import PEM_HEADER
 import sys
 import optparse
+import csv 
 import random
 import math
-from this import s
-from turtle import pos
+from tracemalloc import start
 from scipy.spatial import distance
 import numpy as np
+import pandas as pd
+
 
 if 'SUMO_HOME' in os.environ:
     tools = os.path.join(os.environ['SUMO_HOME'], 'tools')
@@ -21,7 +24,7 @@ from sumolib import checkBinary
 import traci 
 
 class Person:
-    def __init__(self, scenario,default_speed = 0.3, angle_bounds = [-2,-1]):
+    def __init__(self, scenario,default_speed = 0.3, angle_bounds = [-3,-1]):
         self.ID='p_0'
         self.default_speed = default_speed
         self.angle_bounds = angle_bounds
@@ -59,6 +62,7 @@ class Person:
     
     def setNewAngle(self):
         self.angle+=random.uniform(self.angle_bounds[0],self.angle_bounds[1])
+        #self.angle=self.angle
     
     def setCorrectedAngle(self,angle):
         self.angle=angle
@@ -70,7 +74,12 @@ class Person:
         
         self.xPos+=abs((math.cos(newAngle)*newSpeed))
         
-        
+    def setNewXCoordinate(self,coordinate):
+        self.xPos=coordinate
+    
+    def setNewYCoordinate(self,coordinate):
+        self.yPos=coordinate
+
     
     def getPosY(self):
         return self.yPos
